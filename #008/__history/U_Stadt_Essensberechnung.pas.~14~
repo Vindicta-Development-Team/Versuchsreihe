@@ -1,0 +1,101 @@
+unit U_Stadt_Essensberechnung;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, System.Actions,
+  Vcl.ActnList, Vcl.Menus, Vcl.StdCtrls;
+
+type
+  TSpielversuch_Essen = class(TForm)
+    Stadt_15: TPanel;
+    Stadt_6: TPanel;
+    Stadt_3: TPanel;
+    MainMenu1: TMainMenu;
+    Essen1: TMenuItem;
+    N151: TMenuItem;
+    N61: TMenuItem;
+    Stadt31: TMenuItem;
+    Stadt_15_1: TGroupBox;
+    Einwohner_15_1: TPanel;
+    Felder_15: TPanel;
+    N01: TMenuItem;
+    Timer1: TTimer;
+    Jahreszeit: TTimer;
+    Jahreszeit_1: TPanel;
+    Felder_13: TPanel;
+    Stadt_6_1: TGroupBox;
+    Einwohner_6: TPanel;
+    Felder_6: TPanel;
+    Felder_5: TPanel;
+    Stadt_3_1: TGroupBox;
+    Einwohner_3: TPanel;
+    Felder_3: TPanel;
+    Felder_2: TPanel;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    procedure N151Click(Sender: TObject);
+    procedure JahreszeitTimer(Sender: TObject);
+    procedure N61Click(Sender: TObject);
+    procedure Stadt31Click(Sender: TObject);
+    procedure Panel1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Spielversuch_Essen: TSpielversuch_Essen;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure TSpielversuch_Essen.N151Click(Sender: TObject);
+begin
+          Stadt_15_1.Visible := true;
+          Stadt_6_1.Visible := false;
+          stadt_3_1.Visible := false;
+end;
+
+procedure TSpielversuch_Essen.N61Click(Sender: TObject);
+begin
+          stadt_15_1.Visible := false;
+          stadt_6_1.Visible := true;
+          stadt_3_1.Visible := false;
+end;
+procedure TSpielversuch_Essen.Panel1Click(Sender: TObject);
+          var anzeige : string;
+begin
+          anzeige := Stadt_3_1.Control[0].Caption;
+          Panel2.Caption := anzeige;
+end;
+
+procedure TSpielversuch_Essen.Stadt31Click(Sender: TObject);
+begin
+          stadt_15_1.Visible := false;
+          stadt_6_1.Visible := false;
+          stadt_3_1.Visible := true;
+end;
+
+
+
+procedure TSpielversuch_Essen.JahreszeitTimer(Sender: TObject);
+          var m, z, g :shortstring;
+begin
+          m := Jahreszeit_1.Caption;
+          z := 'Winter';
+          g := 'Frühling';
+          if pos (m, z) > 0 then
+          begin
+            Jahreszeit_1.Caption := 'Frühling';
+          end;
+          if pos (m, g) > 0 then
+          begin
+            Jahreszeit_1.Caption := 'Sommer';
+           end;
+end;
+end.

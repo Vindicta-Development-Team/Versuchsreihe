@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.796,=C:\Users\Sever\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.988,C:\Users\Sever\Documents\Embarcadero\Studio\Projekte\Unit1.dfm=C:\Users\Sever\Documents\Delfi_10\#008\U_Stadt_Essensberechnung.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.464,C:\Users\Sever\Documents\Embarcadero\Studio\Projekte\Project1.dproj=C:\Users\Sever\Documents\Delfi_10\#008\P_Stadt_Essensberechnung.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.698,=C:\Users\Sever\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.832,=C:\Users\Sever\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.988,C:\Users\Sever\Documents\Embarcadero\Studio\Projekte\Unit1.pas=C:\Users\Sever\Documents\Delfi_10\#008\U_Stadt_Essensberechnung.pas</Transaction>
+  </Transactions>
+</BorlandProject>
